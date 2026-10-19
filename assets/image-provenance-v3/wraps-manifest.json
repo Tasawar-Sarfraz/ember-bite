@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "ember-chicken-wrap",
+    "master": "/workspace/sites/ember-bite/assets/originals-v3/wraps/ember-chicken-wrap.png",
+    "destination": "/workspace/sites/ember-bite/public/images/products/ember-chicken-wrap.webp",
+    "width": 800,
+    "height": 800,
+    "bytes": 112342,
+    "sha256": "b0e6d7ba30d6f1efb794be3aed66447496b7acccdade2f7234b25ed6a7d54ad2"
+  },
+  {
+    "slug": "peri-peri-wrap",
+    "master": "/workspace/sites/ember-bite/assets/originals-v3/wraps/peri-peri-wrap.png",
+    "destination": "/workspace/sites/ember-bite/public/images/products/peri-peri-wrap.webp",
+    "width": 800,
+    "height": 800,
+    "bytes": 143954,
+    "sha256": "acd6090e748073a3c096de060aff028ec14b997eb7e3a1a9cdd2599b531719da"
+  },
+  {
+    "slug": "falafel-crunch",
+    "master": "/workspace/sites/ember-bite/assets/originals-v3/wraps/falafel-crunch.png",
+    "destination": "/workspace/sites/ember-bite/public/images/products/falafel-crunch.webp",
+    "width": 800,
+    "height": 800,
+    "bytes": 129672,
+    "sha256": "51ed399ed2d3b1f4f891a6bd4182cc031c56a0235db0599634e0393866e9ff06"
+  },
+  {
+    "slug": "category-wraps-v3",
+    "master": "/workspace/sites/ember-bite/assets/originals-v3/wraps/category-wraps-v3.png",
+    "destination": "/workspace/sites/ember-bite/public/images/category-wraps-v3.webp",
+    "width": 800,
+    "height": 600,
+    "bytes": 135700,
+    "sha256": "35870b1cc7aeea1c6f3f84a74951e2182f0fdfd354923f7d219fcd11e65965d2"
+  },
+  {
+    "slug": "story-table-v3",
+    "master": "/workspace/sites/ember-bite/assets/originals-v3/wraps/story-table-v3.png",
+    "destination": "/workspace/sites/ember-bite/public/images/story-table-v3.webp",
+    "width": 1600,
+    "height": 1050,
+    "bytes": 224870,
+    "sha256": "adfc94b93537756f71f0c12df6d207f6a3329a257fdf437cdfae1bbad3d7c407"
+  }
+]

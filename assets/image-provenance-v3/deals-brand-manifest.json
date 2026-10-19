@@ -1,0 +1,52 @@
+[
+  {
+    "slug": "smash-duo",
+    "source": "/workspace/scratch/bf53043685f5/generated_images/exec-3a68df65-a448-440c-ab47-fcc0732009a2.png",
+    "width": 800,
+    "height": 800,
+    "subdir": "products",
+    "prompt": "Use case: ads-marketing. Asset type: square restaurant menu product photo, one complete image. Create a photorealistic premium editorial food photograph for an original contemporary restaurant, EMBER BITE palette: warm cream table, charcoal accents, melted-cheese yellow, subtle red. Subject: the Smash Duo meal, contents must be exactly TWO individual classic SINGLE beef cheeseburgers (one beef patty each, melted cheddar, pickles, toasted brioche), TWO separate servings of plain golden French fries in small cream paper boats, and TWO unbranded short clear glasses of dark cola with ice. No other food, no extra burgers or drinks. Compose all six items clearly separated on cream parchment, no objects cut by frame. Three-quarter overhead tabletop view, 50mm editorial lens, soft warm directional studio light, tactile photoreal food, crisp burger details and appetizing golden fries, natural shadows. Distinct calm premium restaurant style. Landscape arrangement contained in square canvas 1024 by 1024. No text, logos, labels, watermark, people or composite panels. Ensure exact two burger, two fries, two cola counts.",
+    "generator": "Built-in image_gen.imagegen",
+    "verified": "Viewed each generated original. Deal bundle counts match, burger lineup distinct, kitchen image is chef hands preparing pizza. No text/logo/watermark visible."
+  },
+  {
+    "slug": "pizza-night",
+    "source": "/workspace/scratch/bf53043685f5/generated_images/exec-75b0baa7-0e24-4a9a-abf7-58803b7dbb72.png",
+    "width": 800,
+    "height": 800,
+    "subdir": "products",
+    "prompt": "Use case: ads-marketing. Asset type: square restaurant menu product photo, single finished image. Premium photorealistic food editorial photography of a Pizza Night bundle. Contents exactly ONE whole 12-inch pepperoni pizza with melted mozzarella, visible pepperoni slices and baked golden crust, ONE small charcoal bowl of crispy boneless chicken bites, and TWO unbranded clear glasses of cola with ice. Warm cream tabletop, a charcoal circular pizza tray, subtle chili-red cloth corner. Three-quarter overhead 45 degree view with pizza foreground and bowl and glasses behind, all contents fully visible and inside frame, no extra sides or duplicate pizza. Beautiful naturally imperfect food, strong light from the left, fine crust bubbles, realistic glossy cheese, contemporary restaurant campaign quality. Cheese-gold, cream and charcoal palette. Output square 1024x1024, premium appetizing realism. No typography, branding, logos, watermarks, people, collages or grids. Count precisely one pizza, one bowl of bites, two cola glasses.",
+    "generator": "Built-in image_gen.imagegen",
+    "verified": "Viewed each generated original. Deal bundle counts match, burger lineup distinct, kitchen image is chef hands preparing pizza. No text/logo/watermark visible."
+  },
+  {
+    "slug": "the-lunch-edit",
+    "source": "/workspace/scratch/bf53043685f5/generated_images/exec-a4bccd00-f886-4a9c-95b2-078806231163.png",
+    "width": 800,
+    "height": 800,
+    "subdir": "products",
+    "prompt": "Use case: ads-marketing. Asset type: square restaurant menu product photograph, one image. Create a polished photoreal editorial Lunch Edit meal on a warm cream table: exactly ONE grilled chicken wrap cut diagonally into TWO halves, positioned touching to clearly represent one wrap total, revealing grilled chicken, crisp lettuce, tomato and a light sauce; exactly ONE serving of plain golden fries in a cream paper boat; exactly ONE unbranded clear cola glass with ice. Do not include any other food or drink. Cream parchment on charcoal tray, soft warm afternoon directional light, highly realistic textures, restrained rich red napkin as an accent, elegant minimal arrangement with airy separation, viewed at three-quarter angle. All meal contents comfortably inside square frame. High-end restaurant menu photography with approachable tasty food, no text or logos or watermarks, no people, no collage. Output square 1024 by 1024. Exact count: two halves of one wrap, one fries serving, one cola.",
+    "generator": "Built-in image_gen.imagegen",
+    "verified": "Viewed each generated original. Deal bundle counts match, burger lineup distinct, kitchen image is chef hands preparing pizza. No text/logo/watermark visible."
+  },
+  {
+    "slug": "category-burgers-v3",
+    "source": "/workspace/scratch/bf53043685f5/generated_images/exec-35f421b2-dbbc-417c-8914-7365ca486fd0.png",
+    "width": 800,
+    "height": 600,
+    "subdir": "",
+    "prompt": "Use case: ads-marketing. Asset type: restaurant burger-category image, one landscape editorial photograph. Create an original highly appetizing premium burger lineup on a warm cream countertop: three DIFFERENT burgers in a deliberately staggered composition, not repeats. Foreground classic single smash cheeseburger with cheddar and pickles; middle crispy chicken burger with golden craggy fillet and pale slaw; back grilled mushroom cheeseburger with caramelized onions. No fries, cola or other foods. Rich sesame and brioche buns, realistic textures and melty cheddar, warm directional studio lighting with controlled shadows, charcoal backdrop rising behind cream table, subtle chili red paper accent. Distinct elegant food campaign look. Landscape 4:3 composition, approximately 1200x900, retain margin around all burgers for a clean 800x600 final crop. No text, labels, brand names, logos, watermark, people, grid or collage.",
+    "generator": "Built-in image_gen.imagegen",
+    "verified": "Viewed each generated original. Deal bundle counts match, burger lineup distinct, kitchen image is chef hands preparing pizza. No text/logo/watermark visible."
+  },
+  {
+    "slug": "about-kitchen-v3",
+    "source": "/workspace/scratch/bf53043685f5/generated_images/exec-b33fce1c-16b5-4b18-8e43-0f02dc0ed966.png",
+    "width": 1600,
+    "height": 1050,
+    "subdir": "",
+    "prompt": "Use case: photorealistic-natural. Asset type: wide restaurant story photograph, one image. Photoreal editorial close view of an anonymous chef's real human hands carefully arranging fresh mozzarella and basil on ONE fresh pizza at a flour-dusted stone worktop in a refined warm contemporary restaurant kitchen. Only hands and forearms plus a plain charcoal apron torso, no faces. Show tactile dough, flour, ceramic ingredient bowls and a softly out-of-focus warm oven in background. This must be a working-kitchen process image, not an arranged completed meal spread. Inviting cream, charcoal and warm gold palette with subtle wood details; premium natural photography, warm side light, fine grain and real kitchen materials, clean elegant professional environment. Wide horizontal composition roughly 1600x1050, enough space around hands and pizza for cropping. Anatomically plausible hands, exactly five fingers per hand, fingers not fused. No text, labels, logos, brand names, watermarks, customers, duplicate hands or panels.",
+    "generator": "Built-in image_gen.imagegen",
+    "verified": "Viewed each generated original. Deal bundle counts match, burger lineup distinct, kitchen image is chef hands preparing pizza. No text/logo/watermark visible."
+  }
+]

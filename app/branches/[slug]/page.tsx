@@ -1,0 +1,9 @@
+import {notFound} from 'next/navigation';
+import Link from '@/components/site-link';
+import {MapPin,Clock,Bike,ArrowUpRight} from 'lucide-react';
+import {getCatalog} from '@/lib/server';
+import {money} from '@/lib/config';
+import {pageMeta} from '@/lib/seo';
+import {ServiceSelector} from '@/components/service';
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const {branches}=await getCatalog();const b=branches.find(b=>b.slug===slug);return b?pageMeta(`${b.name}, ${b.city}`,`Sample Ember Bite kitchen in ${b.city}. View sample zones, hours and delivery fees.`,`/branches/${slug}`):{title:'Kitchen not found'};}
+export default async function Branch({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const {branches}=await getCatalog();const b=branches.find(b=>b.slug===slug&&b.active);if(!b)notFound();return <div className="container page-section"><nav className="breadcrumbs"><Link href="/branches">Our kitchens</Link><span>/</span><span>{b.city}</span></nav><div className="branch-detail-grid"><div className="branch-map"><MapPin/><span>DECORATIVE MAP · FICTIONAL LOCATION</span></div><div><p className="eyebrow">YOUR {b.city.toUpperCase()} KIND OF FLAVOUR</p><h1>{b.name}<br/><span>kitchen.</span></h1><p>{b.address}</p><div className="branch-facts"><span><Clock size={18}/> Sample hours: {Math.floor(b.open/60)}:{String(b.open%60).padStart(2,'0')}–{Math.floor(b.close/60)%24}:{String(b.close%60).padStart(2,'0')} Asia/Karachi</span><span><Bike size={18}/> Delivery: {money(b.fee)} · minimum {money(b.minimum)}</span><span><MapPin size={18}/> Sample service zones: {b.zones.join(', ')}</span></div><div className="branch-select"><ServiceSelector/><Link href="/menu" className="button">Explore the menu <ArrowUpRight size={18}/></Link></div><p className="note">Choose this kitchen in the selector before ordering. This is a demonstration, not a physical restaurant.</p></div></div></div>;}

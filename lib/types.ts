@@ -1,0 +1,12 @@
+export type Category = { id:string; name:string; sort:number; icon:string };
+export type Option = { id:string; name:string; price:number };
+export type Product = { id:string; slug:string; name:string; category:string; description:string; price:number; image:string; badge:string; ingredients:string; allergens:string; spicy:boolean; vegetarian:boolean; featured:boolean; active:boolean; sizes:Option[]; addons:Option[]; unavailable:string[] };
+export type Branch = { id:string; slug:string; name:string; city:string; address:string; open:number; close:number; fee:number; minimum:number; active:boolean; zones:string[] };
+export type Coupon = { code:string; percent:number; minimum:number; maximum:number; expires:string; active:boolean };
+export type CartItem = { productId:string; sizeId:string; addonIds:string[]; quantity:number };
+export type Catalog = { products:Product[]; categories:Category[]; branches:Branch[]; coupons:Coupon[] };
+export type Selection = { branchId:string; mode:'delivery'|'pickup'; zone:string };
+export type Line = CartItem & { name:string; image:string; size:string; addons:string[]; unitPrice:number; total:number };
+export type Quote = { lines:Line[]; subtotal:number; discount:number; fee:number; tax:number; total:number; coupon:string; branchName:string; mode:'delivery'|'pickup'; taxNote:string };
+export type OrderStatus = 'received'|'accepted'|'preparing'|'ready'|'out_for_delivery'|'completed'|'cancelled';
+export type StoredOrder = { id:string; token:string; idempotency:string; fingerprint:string; status:OrderStatus; customer:string; phone:string; address:string; notes:string; branchId:string; mode:'delivery'|'pickup'; zone:string; quote:Quote; createdAt:string; history:{status:OrderStatus; at:string}[] };

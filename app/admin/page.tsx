@@ -1,0 +1,6 @@
+import {getChatGPTUser,chatGPTSignInPath} from '../chatgpt-auth';
+import {admin} from '@/lib/server';
+import {AdminPanel} from '@/components/admin';
+export const dynamic='force-dynamic';
+export const metadata={title:'Kitchen administration',robots:{index:false,follow:false}};
+export default async function Admin(){const user=await getChatGPTUser();if(!user)return <div className="container page-section empty-state"><p className="eyebrow">THE KITCHEN ENTRANCE</p><h1>A little <span>extra access.</span></h1><p>Sign in with an authorized administrator account to manage this demonstration.</p><a className="button" href={chatGPTSignInPath('/admin')} target="_top">Sign in with ChatGPT</a></div>;try{await admin();}catch{return <div className="container page-section empty-state"><h1>Kitchen <span>access only.</span></h1><p>This signed-in account is not configured as an administrator.</p></div>;}return <div className="container page-section"><div className="admin-heading"><div><p className="eyebrow">A LITTLE ORDER BEHIND THE FLAVOUR</p><h1>Your <span>kitchen.</span></h1></div><span className="admin-user">Signed in as {user.displayName}</span></div><p className="note">Private demonstration. Orders are fictional; payment and email providers are not connected.</p><AdminPanel/></div>;}

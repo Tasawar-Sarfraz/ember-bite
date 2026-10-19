@@ -1,0 +1,77 @@
+{
+  "group": "sides-v3",
+  "generatedWith": "built-in image_gen",
+  "createdAt": "2026-10-18",
+  "items": [
+    {
+      "slug": "loaded-ember-fries",
+      "source": "/workspace/scratch/bf53043685f5/generated_images/exec-e038ceb5-b0a5-4c4e-816f-2aab060b230b.png",
+      "master": "assets/originals-v3/sides/loaded-ember-fries.png",
+      "output": "public/images/products/loaded-ember-fries.webp",
+      "size": [
+        800,
+        800
+      ],
+      "prompt": "Use case: product-mockup. Asset type: square premium restaurant menu photograph for EMBER BITE. Create a single separate photorealistic food product image of loaded vegetarian golden skin-on fries in a small matte charcoal bowl with generous melted golden cheese, glossy orange ember pepper sauce, thin red chili rings and finely chopped green chives. Clearly fries, no meat. Warm cream seamless background and pale warm tabletop; dramatic but soft natural studio side lighting, appetizing authentic textures, three-quarter overhead view, entire bowl clearly within image with breathing room, subject fills 75% of square, professional luxury food photography. No other dishes. No text, letters, logos, branding, watermark, collage, or grid. Produce one square image.",
+      "visualQA": "Inspected individual generation: correct subject, no text or logo, distinct composition.",
+      "bytes": 109572,
+      "sha256": "b30e0e94e3e2862e65b97327af44423b0b61a536d59a6d8be9383036eb13150c"
+    },
+    {
+      "slug": "sea-salt-fries",
+      "source": "/workspace/scratch/bf53043685f5/generated_images/exec-940b3c0f-0d51-4273-87b7-0603f263d226.png",
+      "master": "assets/originals-v3/sides/sea-salt-fries.png",
+      "output": "public/images/products/sea-salt-fries.webp",
+      "size": [
+        800,
+        800
+      ],
+      "prompt": "Use case: product-mockup. Asset type: square premium restaurant menu photograph for EMBER BITE. Create a single separate photorealistic food product image of a generous pile of plain golden skin-on potato fries with visible flaky sea salt only, served in a low simple ivory ceramic dish on a charcoal stone tabletop. No sauce, cheese, chilies, herbs, meat or toppings. Warm cream out-of-focus background, beautiful window side-light, crisp browned potato edges, realistic appetite appeal. Three-quarter overhead close view, entire dish contained with generous clean margins, square composition, visually distinct from any sauced fries. No other dishes. No text, letters, logos, branding, watermark, collage, or grid. Produce one square image.",
+      "visualQA": "Inspected individual generation: correct subject, no text or logo, distinct composition.",
+      "bytes": 127940,
+      "sha256": "246e8c6a1b0c2418783e93133e17a35b96c7cdfb09f73a5254cccb0ceff4c5f7"
+    },
+    {
+      "slug": "crispy-chicken-bites",
+      "source": "/workspace/scratch/bf53043685f5/generated_images/exec-b0a45e9a-70b3-497b-8b1e-e2836abc0f5d.png",
+      "master": "assets/originals-v3/sides/crispy-chicken-bites.png",
+      "output": "public/images/products/crispy-chicken-bites.webp",
+      "size": [
+        800,
+        800
+      ],
+      "prompt": "Use case: product-mockup. Asset type: square premium restaurant menu photograph for EMBER BITE. Create a single separate photorealistic food product image of 8 chunky golden crispy breaded chicken bites, irregular bite-sized chicken pieces with thick crunchy craggy breading, one piece cut in half to clearly reveal juicy white chicken meat. Arrange on a matte charcoal round plate with one small ivory ramekin of orange dipping sauce. Warm cream tabletop and backdrop. Soft directional golden studio lighting, extreme food texture realism, editorial restaurant catalog photography, three-quarter overhead angle, entire plate in frame with clean breathing room. Clearly chicken nuggets and not french fries or mozzarella sticks. No text, letters, logos, branding, watermark, collage, or grid. Produce one square image.",
+      "visualQA": "Inspected individual generation: correct subject, no text or logo, distinct composition.",
+      "bytes": 128136,
+      "sha256": "f507137adfbde6c31b948c5968f9f4b14a16b47316317b299abaee993a579165"
+    },
+    {
+      "slug": "mozzarella-sticks",
+      "source": "/workspace/scratch/bf53043685f5/generated_images/exec-d51ee9f8-9d3c-421b-905f-a99c2d5c9374.png",
+      "master": "assets/originals-v3/sides/mozzarella-sticks.png",
+      "output": "public/images/products/mozzarella-sticks.webp",
+      "size": [
+        800,
+        800
+      ],
+      "prompt": "Use case: product-mockup. Asset type: square premium restaurant menu photograph for EMBER BITE. Create a single separate photorealistic food product image of six golden breaded mozzarella cheese sticks on a warm ivory oval ceramic plate with a small ramekin of rich red tomato dipping sauce. One cheese stick has been broken into two halves suspended just above the plate, showing a dramatic but believable stretchy white mozzarella pull connecting the halves. Other intact sticks clearly elongated cylinders with crisp fine golden breadcrumb coating. Dark charcoal tabletop, warm cream background, soft directional restaurant studio lighting, appetizing realistic textures, three-quarter close view, plate contained in square frame with generous clean margins. Clearly cheese sticks, no chicken, no fries. No hands visible. No text, letters, logos, branding, watermark, collage, or grid. Produce one square image.",
+      "visualQA": "Inspected individual generation: correct subject, no text or logo, distinct composition.",
+      "bytes": 107484,
+      "sha256": "9ad20c4d074fda9fbc42b78824bdb06d6eb53a64e8c27c70ae9345d735047a50"
+    },
+    {
+      "slug": "category-sides-v3",
+      "source": "/workspace/scratch/bf53043685f5/generated_images/exec-f98f8341-2be4-4a48-8090-5ad5410c9d76.png",
+      "master": "assets/originals-v3/sides/category-sides-v3.png",
+      "output": "public/images/category-sides-v3.webp",
+      "size": [
+        800,
+        600
+      ],
+      "prompt": "Use case: photorealistic-natural. Asset type: separate landscape 4:3 premium restaurant category image for EMBER BITE. Create a new original photorealistic editorial tabletop scene of snack-sharing sides for a contemporary restaurant: a small ivory bowl of plain golden fries, a charcoal plate of chunky crispy chicken bites, a second small plate of long mozzarella sticks with one broken cheese center and a small red tomato dip ramekin. Food naturally arranged on a warm cream table, subtly crumpled plain cream napkin and stainless serving fork, dark charcoal accents, directional warm window light, attractive overhead-oblique composition, realistic food detail. A cohesive real scene photographed once, not a collage, grid, or composite of product shots. All main food dishes fully visible, plentiful clean margins for category crop. No pizza, burgers, text, letters, logos, watermark, people. Produce one landscape 4:3 image.",
+      "visualQA": "Inspected individual generation: correct subject, no text or logo, distinct composition.",
+      "bytes": 101030,
+      "sha256": "c4f03755cfeec5f97510ebe0dca3426518b0fb03d61532046989efc0307359f1"
+    }
+  ]
+}

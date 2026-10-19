@@ -1,0 +1,92 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "date": "2026-10-18",
+  "method": "Six distinct independent generations; each original copied intact, then square resizing and WebP quality 82. No atlas or crop reuse.",
+  "visual_qa": "All six inspected individually: chocolate brownie with whipped cream; golden chocolate-chip skillet cookie; spiraled vanilla soft serve; yellow lemon-mint drink; ruby berry-lime drink; dark cola with ice. All unbranded, no text.",
+  "assets": [
+    {
+      "slug": "brownie-and-cream",
+      "details": "A rich dark chocolate brownie square with clearly baked fudgy cake crumb, topped by a tall cloud of soft vanilla whipped cream; glossy dark chocolate drizzle, a few tiny chocolate shavings. It MUST clearly be a brownie, no cookie, no skillet. Ivory ceramic plate, 3/4 close view.",
+      "prompt": "Use case: product-mockup. Asset type: premium restaurant ecommerce product photograph for EMBER BITE. Create ONE single square 1:1 product photograph, not a grid or collage. Seamless warm cream tabletop and warm cream backdrop, premium appetizing studio photography, soft warm directional light, restrained charcoal and caramel accents, crisp natural textures, soft contact shadow, realistic food or beverage physics. Hero product centered with comfortable clear margins, fills about 75 percent of square canvas. Background remains calm and visually consistent across the menu but the actual item is distinct. No text, no logos, no watermark, no decorative graphics, no people, no hands. Subject: A rich dark chocolate brownie square with clearly baked fudgy cake crumb, topped by a tall cloud of soft vanilla whipped cream; glossy dark chocolate drizzle, a few tiny chocolate shavings. It MUST clearly be a brownie, no cookie, no skillet. Ivory ceramic plate, 3/4 close view.",
+      "path": "/workspace/scratch/bf53043685f5/generated_images/exec-06de8242-7037-4731-84f2-45db1eb3bdca.png",
+      "master": "/workspace/sites/ember-bite/assets/originals-v3/sweets-drinks/brownie-and-cream.png",
+      "final": "/workspace/sites/ember-bite/public/images/products/brownie-and-cream.webp",
+      "dimensions": [
+        800,
+        800
+      ],
+      "bytes": 93832,
+      "sha256": "30b7f837ae147541ab8f6c047e42e5661c3fff7c462be042f8eda4353ff9a4aa"
+    },
+    {
+      "slug": "cookie-skillet",
+      "details": "One warm giant golden chocolate-chip COOKIE filling a small black cast-iron skillet, crisp buttery perimeter and a broken molten chocolate center. Scattered recognizable chocolate chips, tiny dark chocolate smears. It MUST clearly be a golden cookie not a brownie, no cream tower. Slightly elevated 3/4 composition.",
+      "prompt": "Use case: product-mockup. Asset type: premium restaurant ecommerce product photograph for EMBER BITE. Create ONE single square 1:1 product photograph, not a grid or collage. Seamless warm cream tabletop and warm cream backdrop, premium appetizing studio photography, soft warm directional light, restrained charcoal and caramel accents, crisp natural textures, soft contact shadow, realistic food or beverage physics. Hero product centered with comfortable clear margins, fills about 75 percent of square canvas. Background remains calm and visually consistent across the menu but the actual item is distinct. No text, no logos, no watermark, no decorative graphics, no people, no hands. Subject: One warm giant golden chocolate-chip COOKIE filling a small black cast-iron skillet, crisp buttery perimeter and a broken molten chocolate center. Scattered recognizable chocolate chips, tiny dark chocolate smears. It MUST clearly be a golden cookie not a brownie, no cream tower. Slightly elevated 3/4 composition.",
+      "path": "/workspace/scratch/bf53043685f5/generated_images/exec-4e148676-e63e-4ccb-bcc9-a7776ac9a6a4.png",
+      "master": "/workspace/sites/ember-bite/assets/originals-v3/sweets-drinks/cookie-skillet.png",
+      "final": "/workspace/sites/ember-bite/public/images/products/cookie-skillet.webp",
+      "dimensions": [
+        800,
+        800
+      ],
+      "bytes": 103708,
+      "sha256": "d0dd5f3840afef0e5195b0ae7e00e9ee2c9eed2de0be1e22a94ffe7b86702c7b"
+    },
+    {
+      "slug": "vanilla-soft-serve",
+      "details": "Tall beautifully spiraled ivory VANILLA SOFT SERVE in a short unbranded matte cream cup. A delicate caramel ribbon drizzle follows the spiral, one small vanilla bean pod resting at base. No chocolate, no brownie, no cookie, no cone. Elegant 3/4 view.",
+      "prompt": "Use case: product-mockup. Asset type: premium restaurant ecommerce product photograph for EMBER BITE. Create ONE single square 1:1 product photograph, not a grid or collage. Seamless warm cream tabletop and warm cream backdrop, premium appetizing studio photography, soft warm directional light, restrained charcoal and caramel accents, crisp natural textures, soft contact shadow, realistic food or beverage physics. Hero product centered with comfortable clear margins, fills about 75 percent of square canvas. Background remains calm and visually consistent across the menu but the actual item is distinct. No text, no logos, no watermark, no decorative graphics, no people, no hands. Subject: Tall beautifully spiraled ivory VANILLA SOFT SERVE in a short unbranded matte cream cup. A delicate caramel ribbon drizzle follows the spiral, one small vanilla bean pod resting at base. No chocolate, no brownie, no cookie, no cone. Elegant 3/4 view.",
+      "path": "/workspace/scratch/bf53043685f5/generated_images/exec-8605270a-a3fe-4b1e-81e2-7d774919f67f.png",
+      "master": "/workspace/sites/ember-bite/assets/originals-v3/sweets-drinks/vanilla-soft-serve.png",
+      "final": "/workspace/sites/ember-bite/public/images/products/vanilla-soft-serve.webp",
+      "dimensions": [
+        800,
+        800
+      ],
+      "bytes": 31090,
+      "sha256": "f6a201aa35ac4c861355f6783f7991a5d9cc17ea8eefd444d11080bf7975e4da"
+    },
+    {
+      "slug": "citrus-cooler",
+      "details": "A refreshing clear pale-yellow lemon and mint sparkling drink in an unbranded tall clear faceted glass, filled with angular translucent ice and visible tiny bubbles. Several thin bright yellow lemon slices in glass and fresh mint sprig at rim, lemon half resting beside glass. No berries, no cola. 3/4 view, enough space above glass.",
+      "prompt": "Use case: product-mockup. Asset type: premium restaurant ecommerce product photograph for EMBER BITE. Create ONE single square 1:1 product photograph, not a grid or collage. Seamless warm cream tabletop and warm cream backdrop, premium appetizing studio photography, soft warm directional light, restrained charcoal and caramel accents, crisp natural textures, soft contact shadow, realistic food or beverage physics. Hero product centered with comfortable clear margins, fills about 75 percent of square canvas. Background remains calm and visually consistent across the menu but the actual item is distinct. No text, no logos, no watermark, no decorative graphics, no people, no hands. Subject: A refreshing clear pale-yellow lemon and mint sparkling drink in an unbranded tall clear faceted glass, filled with angular translucent ice and visible tiny bubbles. Several thin bright yellow lemon slices in glass and fresh mint sprig at rim, lemon half resting beside glass. No berries, no cola. 3/4 view, enough space above glass.",
+      "path": "/workspace/scratch/bf53043685f5/generated_images/exec-455cd765-1f71-46d1-9171-7fd2df2c78f4.png",
+      "master": "/workspace/sites/ember-bite/assets/originals-v3/sweets-drinks/citrus-cooler.png",
+      "final": "/workspace/sites/ember-bite/public/images/products/citrus-cooler.webp",
+      "dimensions": [
+        800,
+        800
+      ],
+      "bytes": 71530,
+      "sha256": "6f3efae11e12dc8b86836764e9e0f42b01f45dec416d0c7b15b5931f1d322304"
+    },
+    {
+      "slug": "berry-fizz",
+      "details": "A striking ruby-red and deep purple berry sparkling drink in an unbranded clear rounded tumbler, vivid blackberry and raspberry color, large clean ice cubes, juicy crushed berries visible, one slim fresh green lime wheel at rim. A few fresh berries beside glass. Not yellow citrus drink, not cola. Elegant close 3/4 view.",
+      "prompt": "Use case: product-mockup. Asset type: premium restaurant ecommerce product photograph for EMBER BITE. Create ONE single square 1:1 product photograph, not a grid or collage. Seamless warm cream tabletop and warm cream backdrop, premium appetizing studio photography, soft warm directional light, restrained charcoal and caramel accents, crisp natural textures, soft contact shadow, realistic food or beverage physics. Hero product centered with comfortable clear margins, fills about 75 percent of square canvas. Background remains calm and visually consistent across the menu but the actual item is distinct. No text, no logos, no watermark, no decorative graphics, no people, no hands. Subject: A striking ruby-red and deep purple berry sparkling drink in an unbranded clear rounded tumbler, vivid blackberry and raspberry color, large clean ice cubes, juicy crushed berries visible, one slim fresh green lime wheel at rim. A few fresh berries beside glass. Not yellow citrus drink, not cola. Elegant close 3/4 view.",
+      "path": "/workspace/scratch/bf53043685f5/generated_images/exec-1a2ce93b-2bcf-428b-bb7b-3e61778219ce.png",
+      "master": "/workspace/sites/ember-bite/assets/originals-v3/sweets-drinks/berry-fizz.png",
+      "final": "/workspace/sites/ember-bite/public/images/products/berry-fizz.webp",
+      "dimensions": [
+        800,
+        800
+      ],
+      "bytes": 100014,
+      "sha256": "5d7b73e044075917c1ab48b4726474967cfc05ef7aa54423f80884a9db786f4a"
+    },
+    {
+      "slug": "classic-cola",
+      "details": "Dark amber-brown cola with ice in an unbranded tall clear glass, luminous caramel at bottom and visible ascending tiny carbonation bubbles, glistening condensation. Clear generous ice cubes above liquid, minimal clean composition and no garnish. Absolutely no can or bottle, no branding, no red or purple berry liquid. 3/4 view.",
+      "prompt": "Use case: product-mockup. Asset type: premium restaurant ecommerce product photograph for EMBER BITE. Create ONE single square 1:1 product photograph, not a grid or collage. Seamless warm cream tabletop and warm cream backdrop, premium appetizing studio photography, soft warm directional light, restrained charcoal and caramel accents, crisp natural textures, soft contact shadow, realistic food or beverage physics. Hero product centered with comfortable clear margins, fills about 75 percent of square canvas. Background remains calm and visually consistent across the menu but the actual item is distinct. No text, no logos, no watermark, no decorative graphics, no people, no hands. Subject: Dark amber-brown cola with ice in an unbranded tall clear glass, luminous caramel at bottom and visible ascending tiny carbonation bubbles, glistening condensation. Clear generous ice cubes above liquid, minimal clean composition and no garnish. Absolutely no can or bottle, no branding, no red or purple berry liquid. 3/4 view.",
+      "path": "/workspace/scratch/bf53043685f5/generated_images/exec-d8f14971-26e8-46b9-acdb-c351bc018f29.png",
+      "master": "/workspace/sites/ember-bite/assets/originals-v3/sweets-drinks/classic-cola.png",
+      "final": "/workspace/sites/ember-bite/public/images/products/classic-cola.webp",
+      "dimensions": [
+        800,
+        800
+      ],
+      "bytes": 84628,
+      "sha256": "17a77c3ecd5047a1a12e914bb81a8924b6f66d68f2e9245f8a6d4b41dddaef51"
+    }
+  ]
+}

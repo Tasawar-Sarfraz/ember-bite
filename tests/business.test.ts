@@ -1,0 +1,25 @@
+import {describe,it,expect} from 'vitest';
+import {quoteOrder,isOpen,validateTransition,orderSchema,nextStatuses} from '../lib/business';
+import {catalogSchema} from '../lib/catalog-schema';
+import {seed} from '../lib/seed';
+const now=new Date('2026-10-18T12:00:00Z');
+const input={items:[{productId:'the-ember-smash',sizeId:'regular',addonIds:['cheese'],quantity:2}],branchId:'lahore',mode:'delivery',zone:'Gulberg',coupon:''};
+describe('authoritative restaurant rules',()=>{
+ it('validates the reproducible sample catalog',()=>expect(catalogSchema.parse(seed).products).toHaveLength(24));
+ it('calculates prices and modifiers in integer minor units',()=>{const q=quoteOrder(input,seed,now);expect(q.subtotal).toBe(188000);expect(q.total).toBe(206000);expect(q.lines[0].unitPrice).toBe(94000);});
+ it('uses correct pizza size surcharge',()=>expect(quoteOrder({...input,items:[{productId:'smoky-pepperoni',sizeId:'large',addonIds:[],quantity:1}]},seed,now).subtotal).toBe(164000));
+ it('applies coupon and maximum discount',()=>{expect(quoteOrder({...input,coupon:'ember10'},seed,now).discount).toBe(18800);expect(quoteOrder({...input,coupon:'EMBER10',items:[{...input.items[0],quantity:20}]},seed,now).discount).toBe(50000);});
+ it('rejects invalid and expired coupons',()=>{expect(()=>quoteOrder({...input,coupon:'FAKE'},seed,now)).toThrow(/invalid/);expect(()=>quoteOrder({...input,coupon:'EMBER10'},seed,new Date('2028-01-01T12:00:00Z'))).toThrow(/expired/);});
+ it('enforces coupon minimum',()=>expect(()=>quoteOrder({...input,mode:'pickup',items:[{...input.items[0],quantity:1,addonIds:[]}],coupon:'EMBER10'},seed,now)).toThrow(/minimum/));
+ it('enforces delivery zones and minimums',()=>{expect(()=>quoteOrder({...input,zone:'Outside'},seed,now)).toThrow(/area/);expect(()=>quoteOrder({...input,items:[{productId:'classic-cola',sizeId:'regular',addonIds:[],quantity:1}]},seed,now)).toThrow(/minimum/);});
+ it('does not charge pickup delivery fees or require a delivery zone',()=>expect(quoteOrder({...input,mode:'pickup',zone:''},seed,now).fee).toBe(0));
+ it('rejects manipulated prices rather than trusting the browser',()=>expect(()=>quoteOrder({...input,items:[{...input.items[0],price:1}]},seed,now)).toThrow());
+ it('rejects unknown products, sizes, duplicate or unknown add-ons',()=>{for(const item of [{...input.items[0],productId:'missing'},{...input.items[0],sizeId:'huge'},{...input.items[0],addonIds:['cheese','cheese']},{...input.items[0],addonIds:['free-steak']}])expect(()=>quoteOrder({...input,items:[item]},seed,now)).toThrow();});
+ it('rejects unavailable branch items',()=>expect(()=>quoteOrder({...input,branchId:'karachi',zone:'Clifton',items:[{productId:'mushroom-melt',sizeId:'regular',addonIds:[],quantity:1}]},seed,now)).toThrow(/unavailable/));
+ it('enforces quantity bounds, whole quantities and nonempty carts',()=>{for(const quantity of [0,-1,21,1.5])expect(()=>quoteOrder({...input,items:[{...input.items[0],quantity}]},seed,now)).toThrow();expect(()=>quoteOrder({...input,items:[]},seed,now)).toThrow();});
+ it('handles opening hours across midnight in Pakistan time',()=>{const b=seed.branches[0];expect(isOpen(b,new Date('2026-10-18T06:00:00Z'))).toBe(true);expect(isOpen(b,new Date('2026-10-18T20:59:00Z'))).toBe(true);expect(isOpen(b,new Date('2026-10-18T21:00:00Z'))).toBe(false);expect(isOpen(b,new Date('2026-10-18T05:59:00Z'))).toBe(false);});
+ it('rejects closed and inactive kitchens',()=>{expect(()=>quoteOrder(input,seed,new Date('2026-10-18T22:00:00Z'))).toThrow(/closed/);const c=structuredClone(seed);c.branches[0].active=false;expect(()=>quoteOrder(input,c,now)).toThrow(/unavailable/);});
+ it('allows only valid transitions for the fulfillment mode',()=>{expect(()=>validateTransition('received','accepted','delivery')).not.toThrow();expect(()=>validateTransition('received','completed','pickup')).toThrow();expect(nextStatuses('ready','pickup')).toEqual(['completed']);expect(nextStatuses('ready','delivery')).toEqual(['out_for_delivery']);expect(()=>validateTransition('completed','cancelled','delivery')).toThrow();});
+ it('validates phone and delivery address',()=>{const o={...input,customer:'Test Guest',phone:'03001234567',address:'House 12, Example Street',notes:'',idempotency:'4b8f88fc-3794-4eea-9d7a-83f357ae4a1a'};expect(orderSchema.parse(o).customer).toBe('Test Guest');expect(()=>orderSchema.parse({...o,phone:'123'})).toThrow();expect(()=>orderSchema.parse({...o,address:'Short'})).toThrow();expect(()=>orderSchema.parse({...o,customer:'x'})).toThrow();});
+ it('rejects invalid catalog references and duplicate option IDs',()=>{const c=structuredClone(seed);c.products[0].category='unknown';expect(()=>catalogSchema.parse(c)).toThrow();c.products[0].category='burgers';c.products[0].sizes.push(c.products[0].sizes[0]);expect(()=>catalogSchema.parse(c)).toThrow();});
+});

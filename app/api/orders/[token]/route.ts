@@ -1,0 +1,2 @@
+import {findOrder,privateJson,apiError} from '@/lib/server';
+export async function GET(_req:Request,{params}:{params:Promise<{token:string}>}){try{const {token}=await params;const o=await findOrder(token);if(!o)return privateJson({error:'Order not found. Check your private tracking link.'},404);return privateJson({id:o.id,status:o.status,mode:o.mode,quote:o.quote,createdAt:o.createdAt,history:o.history});}catch(e){return apiError(e);}}

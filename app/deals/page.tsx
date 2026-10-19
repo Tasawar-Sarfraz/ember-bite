@@ -1,0 +1,6 @@
+import {MenuBrowser} from '@/components/products';
+import {getCatalog} from '@/lib/server';
+import {money} from '@/lib/config';
+import {pageMeta} from '@/lib/seo';
+export function generateMetadata(){return pageMeta('Good deals','Discover sample meal bundles for sharing, pizza nights and lunch breaks at EMBER BITE.','/deals');}
+export default async function Deals(){const catalog=await getCatalog();const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Karachi',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());const offer=catalog.coupons.find(c=>c.active&&c.expires>=today);return <div className="container page-section"><div className="page-heading"><div><p className="eyebrow">MORE FOOD. MORE GOOD.</p><h1>Good things.<br/><span>Better together.</span></h1><p>For a lunch break, a movie night or your favourite people.</p></div><div className="coupon-note"><strong>HERE’S A LITTLE EXTRA</strong>{offer?<><span>Use <b>{offer.code}</b> for {offer.percent}% off</span><small>Sample offer · {money(offer.minimum)} minimum · max {money(offer.maximum)} off · through {offer.expires}</small></>:<><span>Better bites. Together.</span><small>Explore our sample meal bundles below.</small></>}</div></div><MenuBrowser deals/></div>;}
